@@ -16,7 +16,7 @@ refusing to follow them when writing gist content. See
 ## Requirements
 
 - OpenGist 1.15.1
-- An account with a fresh, disposable gist
+- An account with a fresh, disposable gist (OpenGist allows for account registration by default)
 - Python 3
 - Git
 - Linux, macOS, or WSL with symbolic-link support
